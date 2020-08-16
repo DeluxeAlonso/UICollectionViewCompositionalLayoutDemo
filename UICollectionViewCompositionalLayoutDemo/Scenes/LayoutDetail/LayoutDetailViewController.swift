@@ -48,6 +48,9 @@ class LayoutDetailViewController: UIViewController {
         
         collectionView.dataSource = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView.register(SectionHeader.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: SectionHeader.identifier)
         
         collectionView.collectionViewLayout = layout.create()
     }
@@ -66,6 +69,14 @@ extension LayoutDetailViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = .lightGray
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.identifier, for: indexPath) as! SectionHeader
+        headerView.title = "Section title"
+        headerView.subtitle = "Section subtitle"
+        
+        return headerView
     }
     
 }

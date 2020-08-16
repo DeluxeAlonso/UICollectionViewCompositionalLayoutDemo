@@ -34,12 +34,13 @@ class LayoutDetailView: UIView {
     // MARK: - Private
     
     private func setupUI() {
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         
         setupCollectionView()
     }
     
     private func setupCollectionView() {
+        collectionView.backgroundColor = .clear
         addSubview(collectionView)
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: topAnchor),

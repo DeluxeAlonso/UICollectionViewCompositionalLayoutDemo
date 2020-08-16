@@ -17,6 +17,9 @@
 		E25F6FBA24E8E59000FCFF75 /* CompositionalLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */; };
 		E25F6FBC24E8E5CE00FCFF75 /* CompositionalLayoutA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FBB24E8E5CE00FCFF75 /* CompositionalLayoutA.swift */; };
 		E25F6FBE24E8E5DC00FCFF75 /* CompositionalLayoutB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FBD24E8E5DC00FCFF75 /* CompositionalLayoutB.swift */; };
+		E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */; };
+		E2A4AAB424E979D300AF73E2 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB324E979D300AF73E2 /* SectionHeader.swift */; };
+		E2A4AAB824E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB724E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutProtocol.swift; sourceTree = "<group>"; };
 		E25F6FBB24E8E5CE00FCFF75 /* CompositionalLayoutA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutA.swift; sourceTree = "<group>"; };
 		E25F6FBD24E8E5DC00FCFF75 /* CompositionalLayoutB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutB.swift; sourceTree = "<group>"; };
+		E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutC.swift; sourceTree = "<group>"; };
+		E2A4AAB324E979D300AF73E2 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		E2A4AAB724E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Identifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 		E25F6F8D24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2A4AAB524E97A7B00AF73E2 /* Helpers */,
+				E2A4AAB224E979C400AF73E2 /* ViewComponents */,
 				E25F6FB824E8E57800FCFF75 /* CompositionalLayouts */,
 				E25F6FB624E8E4F100FCFF75 /* Scenes */,
 				E25F6F8E24E88B7F00FCFF75 /* AppDelegate.swift */,
@@ -128,8 +136,33 @@
 				E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */,
 				E25F6FBB24E8E5CE00FCFF75 /* CompositionalLayoutA.swift */,
 				E25F6FBD24E8E5DC00FCFF75 /* CompositionalLayoutB.swift */,
+				E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */,
 			);
 			path = CompositionalLayouts;
+			sourceTree = "<group>";
+		};
+		E2A4AAB224E979C400AF73E2 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E2A4AAB324E979D300AF73E2 /* SectionHeader.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		E2A4AAB524E97A7B00AF73E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E2A4AAB624E97A8B00AF73E2 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E2A4AAB624E97A8B00AF73E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2A4AAB724E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +270,11 @@
 				E25F6FB324E88E3D00FCFF75 /* LayoutDetailViewController.swift in Sources */,
 				E25F6FB524E8924B00FCFF75 /* LayoutDetailView.swift in Sources */,
 				E25F6FBC24E8E5CE00FCFF75 /* CompositionalLayoutA.swift in Sources */,
+				E2A4AAB424E979D300AF73E2 /* SectionHeader.swift in Sources */,
 				E25F6F8F24E88B7F00FCFF75 /* AppDelegate.swift in Sources */,
 				E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */,
+				E2A4AAB824E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift in Sources */,
+				E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

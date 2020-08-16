@@ -1,17 +1,17 @@
 //
-//  CompositionalLayoutB.swift
+//  CompositionalLayoutC.swift
 //  UICollectionViewCompositionalLayoutDemo
 //
-//  Created by Alonso on 8/15/20.
+//  Created by Alonso on 8/16/20.
 //  Copyright © 2020 Alonso. All rights reserved.
 //
 
 import UIKit
 
-struct CompositionalLayoutB: CompositionalLayoutProtocol {
+struct CompositionalLayoutC: CompositionalLayoutProtocol {
     
     var title: String? {
-        return "Style B"
+        return "Style C"
     }
     
     var subtitle: String? {
@@ -30,7 +30,10 @@ struct CompositionalLayoutB: CompositionalLayoutProtocol {
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4)
         
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0)
+        
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
+        let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        section.boundarySupplementaryItems = [headerElement]
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
