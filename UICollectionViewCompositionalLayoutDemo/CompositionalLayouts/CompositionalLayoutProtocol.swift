@@ -13,6 +13,16 @@ protocol CompositionalLayoutProtocol {
     var title: String? { get }
     var subtitle: String? { get }
     
+    var numberOfSections: Int { get }
+    
     func create() -> UICollectionViewLayout
+    
+}
+
+extension CompositionalLayoutProtocol {
+    
+    var numberOfSections: Int {
+        return 1
+    }
     
 }

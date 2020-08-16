@@ -61,6 +61,10 @@ class LayoutDetailViewController: UIViewController {
 
 extension LayoutDetailViewController: UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return compositionalLayout.numberOfSections
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 40
     }
