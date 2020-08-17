@@ -17,12 +17,16 @@
 		E25F6FBA24E8E59000FCFF75 /* CompositionalLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */; };
 		E25F6FBC24E8E5CE00FCFF75 /* CompositionalLayoutA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FBB24E8E5CE00FCFF75 /* CompositionalLayoutA.swift */; };
 		E25F6FBE24E8E5DC00FCFF75 /* CompositionalLayoutB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FBD24E8E5DC00FCFF75 /* CompositionalLayoutB.swift */; };
+		E28AF4F624EA222C000689D1 /* LayoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */; };
+		E28AF4FC24EA2E98000689D1 /* LayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */; };
+		E28AF4FE24EA2F06000689D1 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF4FD24EA2F06000689D1 /* UITableViewCell+ReuseIdentifier.swift */; };
 		E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */; };
 		E2A4AAB424E979D300AF73E2 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB324E979D300AF73E2 /* SectionHeader.swift */; };
 		E2A4AAB824E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB724E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift */; };
 		E2A4AABA24E9A69E00AF73E2 /* CompositionalLayoutD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB924E9A69E00AF73E2 /* CompositionalLayoutD.swift */; };
 		E2A4AABC24E9ACDD00AF73E2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AABB24E9ACDD00AF73E2 /* CollectionViewCell.swift */; };
 		E2A4AABE24E9AE9900AF73E2 /* UICollectionViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AABD24E9AE9900AF73E2 /* UICollectionViewCell+ReuseIdentifier.swift */; };
+		E2DD7CF924EA2004001C5678 /* LayoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +54,16 @@
 		E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutProtocol.swift; sourceTree = "<group>"; };
 		E25F6FBB24E8E5CE00FCFF75 /* CompositionalLayoutA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutA.swift; sourceTree = "<group>"; };
 		E25F6FBD24E8E5DC00FCFF75 /* CompositionalLayoutB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutB.swift; sourceTree = "<group>"; };
+		E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsViewModel.swift; sourceTree = "<group>"; };
+		E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTableViewCell.swift; sourceTree = "<group>"; };
+		E28AF4FD24EA2F06000689D1 /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutC.swift; sourceTree = "<group>"; };
 		E2A4AAB324E979D300AF73E2 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		E2A4AAB724E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Identifier.swift"; sourceTree = "<group>"; };
 		E2A4AAB924E9A69E00AF73E2 /* CompositionalLayoutD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutD.swift; sourceTree = "<group>"; };
 		E2A4AABB24E9ACDD00AF73E2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E2A4AABD24E9AE9900AF73E2 /* UICollectionViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		E25F6FB624E8E4F100FCFF75 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E2DD7CF724EA1FD5001C5678 /* Layouts */,
 				E25F6FB724E8E4F900FCFF75 /* LayoutDetail */,
 			);
 			path = Scenes;
@@ -170,8 +179,19 @@
 			children = (
 				E2A4AAB724E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift */,
 				E2A4AABD24E9AE9900AF73E2 /* UICollectionViewCell+ReuseIdentifier.swift */,
+				E28AF4FD24EA2F06000689D1 /* UITableViewCell+ReuseIdentifier.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2DD7CF724EA1FD5001C5678 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */,
+				E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */,
+				E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,14 +296,18 @@
 			files = (
 				E25F6FBA24E8E59000FCFF75 /* CompositionalLayoutProtocol.swift in Sources */,
 				E25F6FBE24E8E5DC00FCFF75 /* CompositionalLayoutB.swift in Sources */,
+				E2DD7CF924EA2004001C5678 /* LayoutsViewController.swift in Sources */,
 				E2A4AABC24E9ACDD00AF73E2 /* CollectionViewCell.swift in Sources */,
 				E25F6FB324E88E3D00FCFF75 /* LayoutDetailViewController.swift in Sources */,
+				E28AF4FC24EA2E98000689D1 /* LayoutTableViewCell.swift in Sources */,
 				E25F6FB524E8924B00FCFF75 /* LayoutDetailView.swift in Sources */,
 				E2A4AABA24E9A69E00AF73E2 /* CompositionalLayoutD.swift in Sources */,
 				E25F6FBC24E8E5CE00FCFF75 /* CompositionalLayoutA.swift in Sources */,
 				E2A4AABE24E9AE9900AF73E2 /* UICollectionViewCell+ReuseIdentifier.swift in Sources */,
+				E28AF4F624EA222C000689D1 /* LayoutsViewModel.swift in Sources */,
 				E2A4AAB424E979D300AF73E2 /* SectionHeader.swift in Sources */,
 				E25F6F8F24E88B7F00FCFF75 /* AppDelegate.swift in Sources */,
+				E28AF4FE24EA2F06000689D1 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */,
 				E2A4AAB824E97AA100AF73E2 /* UICollectionReusableView+Identifier.swift in Sources */,
 				E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */,

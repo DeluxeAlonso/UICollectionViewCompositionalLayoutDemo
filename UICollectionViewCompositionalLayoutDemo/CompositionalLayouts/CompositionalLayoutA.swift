@@ -15,7 +15,7 @@ struct CompositionalLayoutA: CompositionalLayoutProtocol {
     }
     
     var subtitle: String? {
-        return nil
+        return "Simple layout with an absolute height dimension."
     }
     
     func create() -> UICollectionViewLayout {
@@ -25,7 +25,7 @@ struct CompositionalLayoutA: CompositionalLayoutProtocol {
         item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
         
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .absolute(50))
+                                               heightDimension: .absolute(100))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                        subitems: [item])
         
