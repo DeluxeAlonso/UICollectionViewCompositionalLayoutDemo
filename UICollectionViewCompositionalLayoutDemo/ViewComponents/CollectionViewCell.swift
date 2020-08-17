@@ -43,6 +43,13 @@ class CollectionViewCell: UICollectionViewCell {
     
     private func setupUI() {
         backgroundColor = .lightGray
+        
+        layer.cornerRadius = 10
+        
+        setupLabels()
+    }
+    
+    private func setupLabels() {
         addSubview(titleLabel)
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: topAnchor),

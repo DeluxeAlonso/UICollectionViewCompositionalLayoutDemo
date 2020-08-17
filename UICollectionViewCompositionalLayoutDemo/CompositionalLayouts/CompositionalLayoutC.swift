@@ -29,10 +29,10 @@ struct CompositionalLayoutC: CompositionalLayoutProtocol {
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4)
         
-        let section = NSCollectionLayoutSection(group: group)
-        
         let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
         let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        
+        let section = NSCollectionLayoutSection(group: group)
         section.boundarySupplementaryItems = [headerElement]
         
         let layout = UICollectionViewCompositionalLayout(section: section)
