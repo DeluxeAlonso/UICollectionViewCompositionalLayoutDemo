@@ -51,25 +51,18 @@ class SectionHeader: UICollectionReusableView {
     // MARK: - Private
     
     private func setupUI() {
-        let separator = UIView(frame: .zero)
-        separator.translatesAutoresizingMaskIntoConstraints = false
-        separator.backgroundColor = .quaternaryLabel
-        
-        let stackView = UIStackView(arrangedSubviews: [separator, titleLabel, subtitleLabel])
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, subtitleLabel])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
+        stackView.spacing = 5.0
         addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            separator.heightAnchor.constraint(equalToConstant: 1),
-            
+            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12)
         ])
-        
-        stackView.setCustomSpacing(10, after: separator)
     }
     
 }
