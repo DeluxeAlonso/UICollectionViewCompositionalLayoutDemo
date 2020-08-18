@@ -14,7 +14,7 @@ class LayoutDetailViewController: UIViewController {
     private var layoutDetailView: LayoutDetailView!
     
     // MARK: - Initializers
-    
+
     init(compositionalLayout: CompositionalLayoutProtocol) {
         self.compositionalLayout = compositionalLayout
         super.init(nibName: nil, bundle: nil)
@@ -48,8 +48,8 @@ class LayoutDetailViewController: UIViewController {
         
         collectionView.dataSource = self
         
-        collectionView.register(CollectionViewCell.self,
-                                forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
+        collectionView.register(NumberedCollectionViewCell.self,
+                                forCellWithReuseIdentifier: NumberedCollectionViewCell.reuseIdentifier)
         collectionView.register(SectionHeader.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: SectionHeader.identifier)
@@ -72,8 +72,8 @@ extension LayoutDetailViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as! CollectionViewCell
-        cell.title = "\(indexPath.row)"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NumberedCollectionViewCell.reuseIdentifier, for: indexPath) as! NumberedCollectionViewCell
+        cell.number = indexPath.row
         
         return cell
     }

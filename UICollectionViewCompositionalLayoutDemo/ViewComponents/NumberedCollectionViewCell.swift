@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  NumberedCollectionViewCell.swift
 //  UICollectionViewCompositionalLayoutDemo
 //
 //  Created by Alonso on 8/16/20.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class NumberedCollectionViewCell: UICollectionViewCell {
     
-    lazy var titleLabel: UILabel = {
+    lazy var numberLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
@@ -22,9 +22,9 @@ class CollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    var title: String? {
+    var number: Int = 0 {
         didSet {
-            titleLabel.text = title
+            numberLabel.text = "\(number)"
         }
     }
     
@@ -50,12 +50,12 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     private func setupLabels() {
-        addSubview(titleLabel)
+        addSubview(numberLabel)
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: topAnchor),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor)
+            numberLabel.topAnchor.constraint(equalTo: topAnchor),
+            numberLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
+            numberLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            numberLabel.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
     
