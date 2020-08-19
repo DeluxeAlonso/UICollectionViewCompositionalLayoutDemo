@@ -15,7 +15,7 @@ struct CompositionalLayoutE: CompositionalLayoutProtocol {
     }
     
     var subtitle: String? {
-        return nil
+        return "Layout that makes use of more than one group's subitems."
     }
     
     private var topItem: NSCollectionLayoutItem {

@@ -15,7 +15,7 @@ struct CompositionalLayoutF: CompositionalLayoutProtocol {
     }
     
     var subtitle: String? {
-        return nil
+        return "Layout that contains two sections. Each one has a different behavior."
     }
     
     var numberOfSections: Int {

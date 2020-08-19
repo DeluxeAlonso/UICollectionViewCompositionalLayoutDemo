@@ -15,7 +15,7 @@ struct CompositionalLayoutD: CompositionalLayoutProtocol {
     }
     
     var subtitle: String? {
-        return nil
+        return "Sectioned layout that is scrollable in both axis."
     }
     
     var numberOfSections: Int {
