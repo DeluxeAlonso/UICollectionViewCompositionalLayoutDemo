@@ -15,7 +15,7 @@ struct CompositionalLayoutC: CompositionalLayoutProtocol {
     }
     
     var subtitle: String? {
-        return nil
+        return "Simple layout with square cells and a single header."
     }
     
     func create() -> UICollectionViewLayout {
