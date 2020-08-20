@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E230042124EB73D600A34346 /* CompositionalLayoutE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230042024EB73D600A34346 /* CompositionalLayoutE.swift */; };
 		E23399AD24EE150B00EBCFEE /* ViewReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23399AC24EE150B00EBCFEE /* ViewReusable.swift */; };
+		E23399B024EE16C900EBCFEE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23399AF24EE16C900EBCFEE /* UIView+Layout.swift */; };
 		E248DBFB24ECCE1B0067D5DB /* CompositionalLayoutF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248DBFA24ECCE1B0067D5DB /* CompositionalLayoutF.swift */; };
 		E25F6F8F24E88B7F00FCFF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6F8E24E88B7F00FCFF75 /* AppDelegate.swift */; };
 		E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6F9024E88B7F00FCFF75 /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		E230042024EB73D600A34346 /* CompositionalLayoutE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutE.swift; sourceTree = "<group>"; };
 		E23399AC24EE150B00EBCFEE /* ViewReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReusable.swift; sourceTree = "<group>"; };
+		E23399AF24EE16C900EBCFEE /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		E248DBFA24ECCE1B0067D5DB /* CompositionalLayoutF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutF.swift; sourceTree = "<group>"; };
 		E25F6F8B24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25F6F8E24E88B7F00FCFF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 				E23399AC24EE150B00EBCFEE /* ViewReusable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E23399AE24EE16BE00EBCFEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E23399AF24EE16C900EBCFEE /* UIView+Layout.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E25F6F8224E88B7F00FCFF75 = {
@@ -179,6 +189,7 @@
 		E2A4AAB524E97A7B00AF73E2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E23399AE24EE16BE00EBCFEE /* Extensions */,
 				E23399AB24EE14F900EBCFEE /* Protocols */,
 			);
 			path = Helpers;
@@ -308,6 +319,7 @@
 				E2A4AAB424E979D300AF73E2 /* SectionHeader.swift in Sources */,
 				E25F6F8F24E88B7F00FCFF75 /* AppDelegate.swift in Sources */,
 				E23399AD24EE150B00EBCFEE /* ViewReusable.swift in Sources */,
+				E23399B024EE16C900EBCFEE /* UIView+Layout.swift in Sources */,
 				E248DBFB24ECCE1B0067D5DB /* CompositionalLayoutF.swift in Sources */,
 				E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */,
 				E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */,

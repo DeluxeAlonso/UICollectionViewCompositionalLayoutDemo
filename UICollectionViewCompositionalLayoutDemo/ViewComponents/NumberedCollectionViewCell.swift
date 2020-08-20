@@ -51,12 +51,7 @@ class NumberedCollectionViewCell: UICollectionViewCell {
     
     private func setupLabels() {
         addSubview(numberLabel)
-        NSLayoutConstraint.activate([
-            numberLabel.topAnchor.constraint(equalTo: topAnchor),
-            numberLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
-            numberLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            numberLabel.trailingAnchor.constraint(equalTo: trailingAnchor)
-        ])
+        numberLabel.fillSuperview()
     }
     
 }

@@ -55,14 +55,10 @@ class SectionHeader: UICollectionReusableView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 5.0
+        
         addSubview(stackView)
         
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12)
-        ])
+        stackView.fillSuperview(padding: .init(top: 12, left: 8, bottom: 12, right: 8))
     }
     
 }
