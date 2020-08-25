@@ -24,7 +24,8 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
                 CompositionalLayoutC(),
                 CompositionalLayoutD(),
                 CompositionalLayoutE(),
-                CompositionalLayoutF()]
+                CompositionalLayoutF(),
+                CompositionalLayoutG()]
     }()
     
 }

@@ -1,14 +1,42 @@
 //
-//  SectionHeader.swift
+//  SectionReusableView.swift
 //  UICollectionViewCompositionalLayoutDemo
 //
-//  Created by Alonso on 8/16/20.
+//  Created by Alonso on 8/24/20.
 //  Copyright © 2020 Alonso. All rights reserved.
 //
 
 import UIKit
 
-class SectionHeader: UICollectionReusableView {
+enum ReusableViewKind: String {
+    case header
+    case footer
+    
+    var reuseIdentifier: String {
+        return self.rawValue
+    }
+    
+    var title: String? {
+        switch self {
+        case .header:
+            return "Header title"
+        case .footer:
+            return "Footer title"
+        }
+    }
+    
+    var subtitle: String? {
+        switch self {
+        case .header:
+            return "Header subtitle"
+        case .footer:
+            return "Footer subtitle"
+        }
+    }
+    
+}
+
+class SectionReusableView: UICollectionReusableView {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -25,18 +53,6 @@ class SectionHeader: UICollectionReusableView {
         return label
     }()
     
-    var title: String? {
-        didSet {
-            titleLabel.text = title
-        }
-    }
-    
-    var subtitle: String? {
-        didSet {
-            subtitleLabel.text = subtitle
-        }
-    }
-    
     // MARK: - Initializers
     
     override init(frame: CGRect) {
@@ -46,6 +62,13 @@ class SectionHeader: UICollectionReusableView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Public
+    
+    func configure(with kind: ReusableViewKind) {
+        titleLabel.text = kind.title
+        subtitleLabel.text = kind.subtitle
     }
     
     // MARK: - Private

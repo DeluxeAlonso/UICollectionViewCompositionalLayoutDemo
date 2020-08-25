@@ -50,9 +50,12 @@ class LayoutDetailViewController: UIViewController {
         
         collectionView.register(NumberedCollectionViewCell.self,
                                 forCellWithReuseIdentifier: NumberedCollectionViewCell.reuseIdentifier)
-        collectionView.register(SectionHeader.self,
+        collectionView.register(SectionReusableView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-                                withReuseIdentifier: SectionHeader.reuseIdentifier)
+                                withReuseIdentifier: ReusableViewKind.header.reuseIdentifier)
+        collectionView.register(SectionReusableView.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
+                                withReuseIdentifier: ReusableViewKind.footer.reuseIdentifier)
         
         collectionView.collectionViewLayout = layout.create()
     }
@@ -79,13 +82,24 @@ extension LayoutDetailViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                         withReuseIdentifier: SectionHeader.reuseIdentifier,
-                                                                         for: indexPath) as! SectionHeader
-        headerView.title = "Section title"
-        headerView.subtitle = "Section subtitle"
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: ReusableViewKind.header.reuseIdentifier,
+                                                                             for: indexPath) as! SectionReusableView
+            headerView.configure(with: .header)
+            return headerView
+        case UICollectionView.elementKindSectionFooter:
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: ReusableViewKind.footer.reuseIdentifier,
+                                                                             for: indexPath) as!SectionReusableView
+            footerView.configure(with: .footer)
+            return footerView
+        default:
+            break
+        }
         
-        return headerView
+        return UICollectionReusableView()
     }
     
 }
