@@ -13,6 +13,7 @@ protocol CompositionalLayoutProtocol {
     var title: String? { get }
     var subtitle: String? { get }
     
+    var numberOfRowsPerSection: Int { get }
     var numberOfSections: Int { get }
     
     func create() -> UICollectionViewLayout
@@ -20,6 +21,10 @@ protocol CompositionalLayoutProtocol {
 }
 
 extension CompositionalLayoutProtocol {
+    
+    var numberOfRowsPerSection: Int {
+        return 40
+    }
     
     var numberOfSections: Int {
         return 1

@@ -18,6 +18,10 @@ struct CompositionalLayoutG: CompositionalLayoutProtocol {
         return "Layout that contains two sections. Each one has a different behavior."
     }
     
+    var numberOfRowsPerSection: Int {
+        return 5
+    }
+    
     func create() -> UICollectionViewLayout {
            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
                                                 heightDimension: .fractionalHeight(1.0))
