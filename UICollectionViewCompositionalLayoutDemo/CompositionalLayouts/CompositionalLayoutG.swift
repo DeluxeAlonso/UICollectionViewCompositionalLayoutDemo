@@ -15,11 +15,15 @@ struct CompositionalLayoutG: CompositionalLayoutProtocol {
     }
     
     var subtitle: String? {
-        return "Layout that contains two sections. Each one has a different behavior."
+        return "Layout that contains two sections and a header and footer for each of the two sections."
+    }
+    
+    var numberOfSections: Int {
+        return 2
     }
     
     var numberOfRowsPerSection: Int {
-        return 5
+        return 3
     }
     
     func create() -> UICollectionViewLayout {
@@ -27,8 +31,8 @@ struct CompositionalLayoutG: CompositionalLayoutProtocol {
                                                 heightDimension: .fractionalHeight(1.0))
            let item = NSCollectionLayoutItem(layoutSize: itemSize)
            item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
-           let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9),
-                                                 heightDimension: .absolute(50))
+           let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                 heightDimension: .absolute(70))
            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                             subitems: [item])
            group.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: .flexible(0),
@@ -37,18 +41,13 @@ struct CompositionalLayoutG: CompositionalLayoutProtocol {
                                                              bottom: nil)
 
            let footerHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                         heightDimension: .absolute(50.0))
-           let leftSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.1),
-                                                 heightDimension: .absolute(150.0))
+                                                         heightDimension: .estimated(50.0))
            let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerHeaderSize,
                                                                     elementKind: UICollectionView.elementKindSectionHeader,
                                                                     alignment: .top)
            let footer = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerHeaderSize,
                                                                     elementKind: UICollectionView.elementKindSectionFooter,
                                                                     alignment: .bottom)
-           let left = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: leftSize,
-                                                                  elementKind: UICollectionView.elementKindSectionHeader,
-                                                                  alignment: .leading)
         
            let section = NSCollectionLayoutSection(group: group)
            section.boundarySupplementaryItems = [header, footer]
