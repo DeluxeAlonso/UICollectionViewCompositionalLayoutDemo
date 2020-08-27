@@ -31,6 +31,7 @@ struct CompositionalLayoutG: CompositionalLayoutProtocol {
                                                 heightDimension: .fractionalHeight(1.0))
            let item = NSCollectionLayoutItem(layoutSize: itemSize)
            item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+        
            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                  heightDimension: .absolute(70))
            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
@@ -51,10 +52,8 @@ struct CompositionalLayoutG: CompositionalLayoutProtocol {
         
            let section = NSCollectionLayoutSection(group: group)
            section.boundarySupplementaryItems = [header, footer]
-
-           let config = UICollectionViewCompositionalLayoutConfiguration()
-           config.interSectionSpacing = 16
-           let layout = UICollectionViewCompositionalLayout(section: section, configuration: config)
+        
+           let layout = UICollectionViewCompositionalLayout(section: section)
 
            return layout
        }
