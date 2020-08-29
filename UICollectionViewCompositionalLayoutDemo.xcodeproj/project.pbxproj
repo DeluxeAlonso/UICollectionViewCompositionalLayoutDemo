@@ -23,6 +23,7 @@
 		E25F6FBA24E8E59000FCFF75 /* CompositionalLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */; };
 		E25F6FBC24E8E5CE00FCFF75 /* CompositionalLayoutA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FBB24E8E5CE00FCFF75 /* CompositionalLayoutA.swift */; };
 		E25F6FBE24E8E5DC00FCFF75 /* CompositionalLayoutB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FBD24E8E5DC00FCFF75 /* CompositionalLayoutB.swift */; };
+		E26A1D6824FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A1D6724FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.swift */; };
 		E28AF4F624EA222C000689D1 /* LayoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */; };
 		E28AF4FC24EA2E98000689D1 /* LayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */; };
 		E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */; };
@@ -33,6 +34,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		E25F6FA224E88B8400FCFF75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25F6F8324E88B7F00FCFF75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25F6F8A24E88B7F00FCFF75;
+			remoteInfo = UICollectionViewCompositionalLayoutDemo;
+		};
+		E26A1D6A24FB18D200611FA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E25F6F8324E88B7F00FCFF75 /* Project object */;
 			proxyType = 1;
@@ -62,6 +70,9 @@
 		E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutProtocol.swift; sourceTree = "<group>"; };
 		E25F6FBB24E8E5CE00FCFF75 /* CompositionalLayoutA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutA.swift; sourceTree = "<group>"; };
 		E25F6FBD24E8E5DC00FCFF75 /* CompositionalLayoutB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutB.swift; sourceTree = "<group>"; };
+		E26A1D6524FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewCompositionalLayoutDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26A1D6724FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCompositionalLayoutDemoUITests.swift; sourceTree = "<group>"; };
+		E26A1D6924FB18D200611FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsViewModel.swift; sourceTree = "<group>"; };
 		E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTableViewCell.swift; sourceTree = "<group>"; };
 		E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutC.swift; sourceTree = "<group>"; };
@@ -79,6 +90,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E25F6F9E24E88B8400FCFF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26A1D6224FB18D200611FA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -109,6 +127,7 @@
 			children = (
 				E25F6F8D24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */,
 				E25F6FA424E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests */,
+				E26A1D6624FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests */,
 				E25F6F8C24E88B7F00FCFF75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +137,7 @@
 			children = (
 				E25F6F8B24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo.app */,
 				E25F6FA124E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.xctest */,
+				E26A1D6524FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +198,15 @@
 				E209BD2424F4B9F40038A5EB /* CompositionalLayoutG.swift */,
 			);
 			path = CompositionalLayouts;
+			sourceTree = "<group>";
+		};
+		E26A1D6624FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E26A1D6724FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.swift */,
+				E26A1D6924FB18D200611FA3 /* Info.plist */,
+			);
+			path = UICollectionViewCompositionalLayoutDemoUITests;
 			sourceTree = "<group>";
 		};
 		E2A4AAB224E979C400AF73E2 /* ViewComponents */ = {
@@ -246,6 +275,24 @@
 			productReference = E25F6FA124E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E26A1D6424FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26A1D6E24FB18D200611FA3 /* Build configuration list for PBXNativeTarget "UICollectionViewCompositionalLayoutDemoUITests" */;
+			buildPhases = (
+				E26A1D6124FB18D200611FA3 /* Sources */,
+				E26A1D6224FB18D200611FA3 /* Frameworks */,
+				E26A1D6324FB18D200611FA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26A1D6B24FB18D200611FA3 /* PBXTargetDependency */,
+			);
+			name = UICollectionViewCompositionalLayoutDemoUITests;
+			productName = UICollectionViewCompositionalLayoutDemoUITests;
+			productReference = E26A1D6524FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,6 +307,10 @@
 						CreatedOnToolsVersion = 11.6;
 					};
 					E25F6FA024E88B8400FCFF75 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E25F6F8A24E88B7F00FCFF75;
+					};
+					E26A1D6424FB18D200611FA3 = {
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = E25F6F8A24E88B7F00FCFF75;
 					};
@@ -280,6 +331,7 @@
 			targets = (
 				E25F6F8A24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */,
 				E25F6FA024E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests */,
+				E26A1D6424FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +347,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E25F6F9F24E88B8400FCFF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26A1D6324FB18D200611FA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,6 +397,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E26A1D6124FB18D200611FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26A1D6824FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -345,6 +412,11 @@
 			isa = PBXTargetDependency;
 			target = E25F6F8A24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */;
 			targetProxy = E25F6FA224E88B8400FCFF75 /* PBXContainerItemProxy */;
+		};
+		E26A1D6B24FB18D200611FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25F6F8A24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */;
+			targetProxy = E26A1D6A24FB18D200611FA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -556,6 +628,44 @@
 			};
 			name = Release;
 		};
+		E26A1D6C24FB18D200611FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E95KU8J3PN;
+				INFOPLIST_FILE = UICollectionViewCompositionalLayoutDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UICollectionViewCompositionalLayoutDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UICollectionViewCompositionalLayoutDemo;
+			};
+			name = Debug;
+		};
+		E26A1D6D24FB18D200611FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E95KU8J3PN;
+				INFOPLIST_FILE = UICollectionViewCompositionalLayoutDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UICollectionViewCompositionalLayoutDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UICollectionViewCompositionalLayoutDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,6 +692,15 @@
 			buildConfigurations = (
 				E25F6FAE24E88B8400FCFF75 /* Debug */,
 				E25F6FAF24E88B8400FCFF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26A1D6E24FB18D200611FA3 /* Build configuration list for PBXNativeTarget "UICollectionViewCompositionalLayoutDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26A1D6C24FB18D200611FA3 /* Debug */,
+				E26A1D6D24FB18D200611FA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
