@@ -10,15 +10,16 @@ import Foundation
 
 protocol LayoutsViewModelProtocol {
     
-    var layouts: [CompositionalLayoutProtocol] { get }
+    var numberOfLayouts: Int { get }
     
+    func layout(at index: Int) -> CompositionalLayoutProtocol
     func makeLayoutCellViewModel(for index: Int) -> LayoutCellViewModelProtocol
     
 }
 
 final class LayoutsViewModel: LayoutsViewModelProtocol {
     
-    lazy var layouts: [CompositionalLayoutProtocol] = {
+    private lazy var layouts: [CompositionalLayoutProtocol] = {
         return [CompositionalLayoutA(),
                 CompositionalLayoutB(),
                 CompositionalLayoutC(),
@@ -28,9 +29,16 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
                 CompositionalLayoutG()]
     }()
     
+    var numberOfLayouts: Int {
+        return layouts.count
+    }
+    
+    func layout(at index: Int) -> CompositionalLayoutProtocol {
+        return layouts[index]
+    }
+    
     func makeLayoutCellViewModel(for index: Int) -> LayoutCellViewModelProtocol {
-        let layout = layouts[index]
-        
+        let layout = self.layout(at: index)
         return LayoutCellViewModel(layout)
     }
 

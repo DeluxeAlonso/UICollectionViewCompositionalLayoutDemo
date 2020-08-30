@@ -40,9 +40,9 @@ class LayoutsViewController: UITableViewController {
     private func configureTableView() {
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
-
-        tableView.register(cellType: LayoutTableViewCell.self)
         tableView.tableFooterView = UIView()
+        
+        tableView.register(cellType: LayoutTableViewCell.self)
     }
 
     // MARK: - UITableViewControllerDataSource
@@ -52,7 +52,7 @@ class LayoutsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.layouts.count
+        return viewModel.numberOfLayouts
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,7 +67,7 @@ class LayoutsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let selectedLayout = viewModel.layouts[indexPath.row]
+        let selectedLayout = viewModel.layout(at: indexPath.row)
         let detailViewController = LayoutDetailViewController(compositionalLayout: selectedLayout)
         
         navigationController?.pushViewController(detailViewController, animated: true)
