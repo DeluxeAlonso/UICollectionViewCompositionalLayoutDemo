@@ -41,7 +41,7 @@ class LayoutsViewController: UITableViewController {
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
 
-        tableView.register(LayoutTableViewCell.self, forCellReuseIdentifier: LayoutTableViewCell.reuseIdentifier)
+        tableView.register(cellType: LayoutTableViewCell.self)
         tableView.tableFooterView = UIView()
     }
 
@@ -56,7 +56,7 @@ class LayoutsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: LayoutTableViewCell.reuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(with: LayoutTableViewCell.self, for: indexPath)
         cell.accessoryType = .disclosureIndicator
         
         let layout = viewModel.layouts[indexPath.row]

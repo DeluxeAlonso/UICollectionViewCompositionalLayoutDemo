@@ -22,6 +22,4 @@ extension ViewReusable {
     
 }
 
-extension UITableViewCell: ViewReusable {}
-
 extension UICollectionReusableView: ViewReusable {}
