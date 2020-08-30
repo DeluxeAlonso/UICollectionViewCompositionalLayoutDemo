@@ -49,12 +49,8 @@ class LayoutDetailViewController: UIViewController {
         collectionView.dataSource = self
         
         collectionView.register(cellType: NumberedCollectionViewCell.self)
-        collectionView.register(SectionHeaderView.self,
-                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-                                withReuseIdentifier: UICollectionView.elementKindSectionHeader)
-        collectionView.register(SectionFooterView.self,
-                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
-                                withReuseIdentifier: UICollectionView.elementKindSectionFooter)
+        collectionView.register(viewType: SectionHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
+        collectionView.register(viewType: SectionFooterView.self, kind: UICollectionView.elementKindSectionFooter)
         
         collectionView.collectionViewLayout = layout.create()
     }
