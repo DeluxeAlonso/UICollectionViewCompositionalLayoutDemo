@@ -12,11 +12,11 @@ protocol LayoutsViewModelProtocol {
     
     var layouts: [CompositionalLayoutProtocol] { get }
     
+    func makeLayoutCellViewModel(for index: Int) -> LayoutCellViewModelProtocol
+    
 }
 
 final class LayoutsViewModel: LayoutsViewModelProtocol {
-    
-    // MARK: - LayoutsViewModelProtocol
     
     lazy var layouts: [CompositionalLayoutProtocol] = {
         return [CompositionalLayoutA(),
@@ -28,4 +28,10 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
                 CompositionalLayoutG()]
     }()
     
+    func makeLayoutCellViewModel(for index: Int) -> LayoutCellViewModelProtocol {
+        let layout = layouts[index]
+        
+        return LayoutCellViewModel(layout)
+    }
+
 }

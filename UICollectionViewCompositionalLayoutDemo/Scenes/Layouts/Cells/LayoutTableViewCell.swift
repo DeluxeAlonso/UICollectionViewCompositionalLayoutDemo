@@ -10,6 +10,12 @@ import UIKit
 
 class LayoutTableViewCell: UITableViewCell {
     
+    var viewModel: LayoutCellViewModelProtocol? {
+        didSet {
+            setupBindings()
+        }
+    }
+    
     // MARK: - Initializers
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -33,7 +39,15 @@ class LayoutTableViewCell: UITableViewCell {
     // MARK: - Private
     
     private func setupUI() {
+        accessoryType = .disclosureIndicator
         detailTextLabel?.numberOfLines = 0
+    }
+    
+    // MARK: - Reactive Behavior
+    
+    private func setupBindings() {
+        textLabel?.text = viewModel?.title
+        detailTextLabel?.text = viewModel?.subtitle
     }
 
 }

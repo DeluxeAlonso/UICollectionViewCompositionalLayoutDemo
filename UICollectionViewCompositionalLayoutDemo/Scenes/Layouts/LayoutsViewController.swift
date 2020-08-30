@@ -57,11 +57,7 @@ class LayoutsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: LayoutTableViewCell.self, for: indexPath)
-        cell.accessoryType = .disclosureIndicator
-        
-        let layout = viewModel.layouts[indexPath.row]
-        cell.textLabel?.text = layout.title
-        cell.detailTextLabel?.text = layout.subtitle
+        cell.viewModel = viewModel.makeLayoutCellViewModel(for: indexPath.row)
         
         return cell
     }
