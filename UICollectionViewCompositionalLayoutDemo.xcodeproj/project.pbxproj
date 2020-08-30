@@ -12,6 +12,8 @@
 		E230042124EB73D600A34346 /* CompositionalLayoutE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230042024EB73D600A34346 /* CompositionalLayoutE.swift */; };
 		E23399AD24EE150B00EBCFEE /* ViewReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23399AC24EE150B00EBCFEE /* ViewReusable.swift */; };
 		E23399B024EE16C900EBCFEE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23399AF24EE16C900EBCFEE /* UIView+Layout.swift */; };
+		E23D840B24FB5FB3003F72D9 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D840A24FB5FB3003F72D9 /* SectionHeaderView.swift */; };
+		E23D840D24FB5FBF003F72D9 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D840C24FB5FBF003F72D9 /* SectionFooterView.swift */; };
 		E248DBFB24ECCE1B0067D5DB /* CompositionalLayoutF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248DBFA24ECCE1B0067D5DB /* CompositionalLayoutF.swift */; };
 		E25F6F8F24E88B7F00FCFF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6F8E24E88B7F00FCFF75 /* AppDelegate.swift */; };
 		E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6F9024E88B7F00FCFF75 /* SceneDelegate.swift */; };
@@ -59,6 +61,8 @@
 		E230042024EB73D600A34346 /* CompositionalLayoutE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutE.swift; sourceTree = "<group>"; };
 		E23399AC24EE150B00EBCFEE /* ViewReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReusable.swift; sourceTree = "<group>"; };
 		E23399AF24EE16C900EBCFEE /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		E23D840A24FB5FB3003F72D9 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		E23D840C24FB5FBF003F72D9 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
 		E248DBFA24ECCE1B0067D5DB /* CompositionalLayoutF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutF.swift; sourceTree = "<group>"; };
 		E25F6F8B24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25F6F8E24E88B7F00FCFF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E23D840924FB5F74003F72D9 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E2A4AABB24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift */,
+				E209BD2824F4CEC80038A5EB /* SectionReusableView.swift */,
+				E23D840A24FB5FB3003F72D9 /* SectionHeaderView.swift */,
+				E23D840C24FB5FBF003F72D9 /* SectionFooterView.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
 		E25F6F8224E88B7F00FCFF75 = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				E2A4AAB524E97A7B00AF73E2 /* Helpers */,
-				E2A4AAB224E979C400AF73E2 /* ViewComponents */,
 				E25F6FB824E8E57800FCFF75 /* CompositionalLayouts */,
 				E25F6FB624E8E4F100FCFF75 /* Scenes */,
 				E25F6F8E24E88B7F00FCFF75 /* AppDelegate.swift */,
@@ -190,6 +204,7 @@
 		E25F6FB724E8E4F900FCFF75 /* LayoutDetail */ = {
 			isa = PBXGroup;
 			children = (
+				E23D840924FB5F74003F72D9 /* ViewComponents */,
 				E25F6FB424E8924B00FCFF75 /* LayoutDetailView.swift */,
 				E25F6FB224E88E3D00FCFF75 /* LayoutDetailViewController.swift */,
 			);
@@ -220,20 +235,11 @@
 			path = UICollectionViewCompositionalLayoutDemoUITests;
 			sourceTree = "<group>";
 		};
-		E26A1D7724FB5C1C00611FA3 /* Cells */ = {
+		E26A1D7724FB5C1C00611FA3 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
 				E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */,
 				E26A1D7524FB5B5B00611FA3 /* LayoutCellViewModel.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		E2A4AAB224E979C400AF73E2 /* ViewComponents */ = {
-			isa = PBXGroup;
-			children = (
-				E2A4AABB24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift */,
-				E209BD2824F4CEC80038A5EB /* SectionReusableView.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -250,7 +256,7 @@
 		E2DD7CF724EA1FD5001C5678 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				E26A1D7724FB5C1C00611FA3 /* Cells */,
+				E26A1D7724FB5C1C00611FA3 /* ViewComponents */,
 				E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */,
 				E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */,
 			);
@@ -396,6 +402,7 @@
 				E2A4AABC24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift in Sources */,
 				E25F6FB324E88E3D00FCFF75 /* LayoutDetailViewController.swift in Sources */,
 				E28AF4FC24EA2E98000689D1 /* LayoutTableViewCell.swift in Sources */,
+				E23D840D24FB5FBF003F72D9 /* SectionFooterView.swift in Sources */,
 				E26A1D7624FB5B5B00611FA3 /* LayoutCellViewModel.swift in Sources */,
 				E25F6FB524E8924B00FCFF75 /* LayoutDetailView.swift in Sources */,
 				E230042124EB73D600A34346 /* CompositionalLayoutE.swift in Sources */,
@@ -406,6 +413,7 @@
 				E25F6F8F24E88B7F00FCFF75 /* AppDelegate.swift in Sources */,
 				E23399AD24EE150B00EBCFEE /* ViewReusable.swift in Sources */,
 				E23399B024EE16C900EBCFEE /* UIView+Layout.swift in Sources */,
+				E23D840B24FB5FB3003F72D9 /* SectionHeaderView.swift in Sources */,
 				E26A1D7024FB3F8000611FA3 /* UICollectionView+Dequeuing.swift in Sources */,
 				E248DBFB24ECCE1B0067D5DB /* CompositionalLayoutF.swift in Sources */,
 				E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */,

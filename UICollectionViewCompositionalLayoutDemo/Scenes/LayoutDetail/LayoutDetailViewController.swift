@@ -48,14 +48,13 @@ class LayoutDetailViewController: UIViewController {
         
         collectionView.dataSource = self
         
-        collectionView.register(NumberedCollectionViewCell.self,
-                                forCellWithReuseIdentifier: NumberedCollectionViewCell.reuseIdentifier)
-        collectionView.register(SectionReusableView.self,
+        collectionView.register(cellType: NumberedCollectionViewCell.self)
+        collectionView.register(SectionHeaderView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-                                withReuseIdentifier: ReusableViewKind.header.reuseIdentifier)
-        collectionView.register(SectionReusableView.self,
+                                withReuseIdentifier: UICollectionView.elementKindSectionHeader)
+        collectionView.register(SectionFooterView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
-                                withReuseIdentifier: ReusableViewKind.footer.reuseIdentifier)
+                                withReuseIdentifier: UICollectionView.elementKindSectionFooter)
         
         collectionView.collectionViewLayout = layout.create()
     }
@@ -75,31 +74,16 @@ extension LayoutDetailViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NumberedCollectionViewCell.reuseIdentifier, for: indexPath) as! NumberedCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(with: NumberedCollectionViewCell.self, for: indexPath)
         cell.number = indexPath.row
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        switch kind {
-        case UICollectionView.elementKindSectionHeader:
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                             withReuseIdentifier: ReusableViewKind.header.reuseIdentifier,
-                                                                             for: indexPath) as! SectionReusableView
-            headerView.configure(with: .header)
-            return headerView
-        case UICollectionView.elementKindSectionFooter:
-            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                             withReuseIdentifier: ReusableViewKind.footer.reuseIdentifier,
-                                                                             for: indexPath) as!SectionReusableView
-            footerView.configure(with: .footer)
-            return footerView
-        default:
-            break
-        }
-        
-        return UICollectionReusableView()
+        return collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                               withReuseIdentifier: kind,
+                                                               for: indexPath)
     }
     
 }

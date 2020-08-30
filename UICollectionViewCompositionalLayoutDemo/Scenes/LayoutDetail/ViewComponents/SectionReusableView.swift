@@ -8,37 +8,9 @@
 
 import UIKit
 
-enum ReusableViewKind: String {
-    case header
-    case footer
-    
-    var reuseIdentifier: String {
-        return self.rawValue
-    }
-    
-    var title: String? {
-        switch self {
-        case .header:
-            return "Header title"
-        case .footer:
-            return "Footer title"
-        }
-    }
-    
-    var subtitle: String? {
-        switch self {
-        case .header:
-            return "Header subtitle"
-        case .footer:
-            return "Footer subtitle"
-        }
-    }
-    
-}
-
 class SectionReusableView: UICollectionReusableView {
     
-    private lazy var titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
         label.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 22, weight: .bold))
@@ -46,7 +18,7 @@ class SectionReusableView: UICollectionReusableView {
         return label
     }()
     
-    private let subtitleLabel: UILabel = {
+    lazy var subtitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .secondaryLabel
         
@@ -57,19 +29,12 @@ class SectionReusableView: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupUI()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    // MARK: - Public
-    
-    func configure(with kind: ReusableViewKind) {
-        titleLabel.text = kind.title
-        subtitleLabel.text = kind.subtitle
+        super.init(coder: coder)
+        setupUI()
     }
     
     // MARK: - Private
