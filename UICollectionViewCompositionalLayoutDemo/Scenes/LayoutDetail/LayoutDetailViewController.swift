@@ -77,9 +77,7 @@ extension LayoutDetailViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        return collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                               withReuseIdentifier: kind,
-                                                               for: indexPath)
+        return collectionView.dequeueReusableView(with: UICollectionReusableView.self, kind: kind, for: indexPath)
     }
     
 }
