@@ -18,7 +18,6 @@
 		E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6F9024E88B7F00FCFF75 /* SceneDelegate.swift */; };
 		E25F6F9824E88B8400FCFF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25F6F9724E88B8400FCFF75 /* Assets.xcassets */; };
 		E25F6F9B24E88B8400FCFF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F6F9924E88B8400FCFF75 /* LaunchScreen.storyboard */; };
-		E25F6FA624E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FA524E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.swift */; };
 		E25F6FB324E88E3D00FCFF75 /* LayoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FB224E88E3D00FCFF75 /* LayoutDetailViewController.swift */; };
 		E25F6FB524E8924B00FCFF75 /* LayoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FB424E8924B00FCFF75 /* LayoutDetailView.swift */; };
 		E25F6FBA24E8E59000FCFF75 /* CompositionalLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */; };
@@ -38,13 +37,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E25F6FA224E88B8400FCFF75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E25F6F8324E88B7F00FCFF75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E25F6F8A24E88B7F00FCFF75;
-			remoteInfo = UICollectionViewCompositionalLayoutDemo;
-		};
 		E26A1D6A24FB18D200611FA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E25F6F8324E88B7F00FCFF75 /* Project object */;
@@ -68,9 +60,6 @@
 		E25F6F9724E88B8400FCFF75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E25F6F9A24E88B8400FCFF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E25F6F9C24E88B8400FCFF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E25F6FA124E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewCompositionalLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E25F6FA524E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCompositionalLayoutDemoTests.swift; sourceTree = "<group>"; };
-		E25F6FA724E88B8400FCFF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25F6FB224E88E3D00FCFF75 /* LayoutDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDetailViewController.swift; sourceTree = "<group>"; };
 		E25F6FB424E8924B00FCFF75 /* LayoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDetailView.swift; sourceTree = "<group>"; };
 		E25F6FB924E8E59000FCFF75 /* CompositionalLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutProtocol.swift; sourceTree = "<group>"; };
@@ -93,13 +82,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		E25F6F8824E88B7F00FCFF75 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E25F6F9E24E88B8400FCFF75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -149,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				E25F6F8D24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */,
-				E25F6FA424E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests */,
 				E26A1D6624FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests */,
 				E25F6F8C24E88B7F00FCFF75 /* Products */,
 			);
@@ -159,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				E25F6F8B24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo.app */,
-				E25F6FA124E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.xctest */,
 				E26A1D6524FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests.xctest */,
 			);
 			name = Products;
@@ -178,15 +158,6 @@
 				E25F6F9C24E88B8400FCFF75 /* Info.plist */,
 			);
 			path = UICollectionViewCompositionalLayoutDemo;
-			sourceTree = "<group>";
-		};
-		E25F6FA424E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				E25F6FA524E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.swift */,
-				E25F6FA724E88B8400FCFF75 /* Info.plist */,
-			);
-			path = UICollectionViewCompositionalLayoutDemoTests;
 			sourceTree = "<group>";
 		};
 		E25F6FB624E8E4F100FCFF75 /* Scenes */ = {
@@ -280,24 +251,6 @@
 			productReference = E25F6F8B24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E25F6FA024E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E25F6FAD24E88B8400FCFF75 /* Build configuration list for PBXNativeTarget "UICollectionViewCompositionalLayoutDemoTests" */;
-			buildPhases = (
-				E25F6F9D24E88B8400FCFF75 /* Sources */,
-				E25F6F9E24E88B8400FCFF75 /* Frameworks */,
-				E25F6F9F24E88B8400FCFF75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E25F6FA324E88B8400FCFF75 /* PBXTargetDependency */,
-			);
-			name = UICollectionViewCompositionalLayoutDemoTests;
-			productName = UICollectionViewCompositionalLayoutDemoTests;
-			productReference = E25F6FA124E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E26A1D6424FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E26A1D6E24FB18D200611FA3 /* Build configuration list for PBXNativeTarget "UICollectionViewCompositionalLayoutDemoUITests" */;
@@ -329,10 +282,6 @@
 					E25F6F8A24E88B7F00FCFF75 = {
 						CreatedOnToolsVersion = 11.6;
 					};
-					E25F6FA024E88B8400FCFF75 = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = E25F6F8A24E88B7F00FCFF75;
-					};
 					E26A1D6424FB18D200611FA3 = {
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = E25F6F8A24E88B7F00FCFF75;
@@ -353,7 +302,6 @@
 			projectRoot = "";
 			targets = (
 				E25F6F8A24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */,
-				E25F6FA024E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests */,
 				E26A1D6424FB18D200611FA3 /* UICollectionViewCompositionalLayoutDemoUITests */,
 			);
 		};
@@ -366,13 +314,6 @@
 			files = (
 				E25F6F9B24E88B8400FCFF75 /* LaunchScreen.storyboard in Resources */,
 				E25F6F9824E88B8400FCFF75 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E25F6F9F24E88B8400FCFF75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,14 +358,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E25F6F9D24E88B8400FCFF75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E25F6FA624E88B8400FCFF75 /* UICollectionViewCompositionalLayoutDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E26A1D6124FB18D200611FA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,11 +369,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E25F6FA324E88B8400FCFF75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E25F6F8A24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */;
-			targetProxy = E25F6FA224E88B8400FCFF75 /* PBXContainerItemProxy */;
-		};
 		E26A1D6B24FB18D200611FA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E25F6F8A24E88B7F00FCFF75 /* UICollectionViewCompositionalLayoutDemo */;
@@ -612,50 +540,6 @@
 			};
 			name = Release;
 		};
-		E25F6FAE24E88B8400FCFF75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E95KU8J3PN;
-				INFOPLIST_FILE = UICollectionViewCompositionalLayoutDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UICollectionViewCompositionalLayoutDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UICollectionViewCompositionalLayoutDemo.app/UICollectionViewCompositionalLayoutDemo";
-			};
-			name = Debug;
-		};
-		E25F6FAF24E88B8400FCFF75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E95KU8J3PN;
-				INFOPLIST_FILE = UICollectionViewCompositionalLayoutDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UICollectionViewCompositionalLayoutDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UICollectionViewCompositionalLayoutDemo.app/UICollectionViewCompositionalLayoutDemo";
-			};
-			name = Release;
-		};
 		E26A1D6C24FB18D200611FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -711,15 +595,6 @@
 			buildConfigurations = (
 				E25F6FAB24E88B8400FCFF75 /* Debug */,
 				E25F6FAC24E88B8400FCFF75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E25F6FAD24E88B8400FCFF75 /* Build configuration list for PBXNativeTarget "UICollectionViewCompositionalLayoutDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E25F6FAE24E88B8400FCFF75 /* Debug */,
-				E25F6FAF24E88B8400FCFF75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
