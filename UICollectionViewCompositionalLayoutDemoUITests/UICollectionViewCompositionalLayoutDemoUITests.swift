@@ -21,6 +21,7 @@ class UICollectionViewCompositionalLayoutDemoUITests: XCTestCase {
     
     func testLayouts() {
         let app = XCUIApplication()
+        setupSnapshot(app)
         app.activate()
         
         let cells = app.tables.cells
@@ -31,6 +32,8 @@ class UICollectionViewCompositionalLayoutDemoUITests: XCTestCase {
             let layoutCells = app.collectionViews.cells
             
             XCTAssert(layoutCells.count > 0)
+            
+            snapshot(app.navigationBars.firstMatch.title)
             
             app.navigationBars.buttons.element(boundBy: 0).tap()
         }
