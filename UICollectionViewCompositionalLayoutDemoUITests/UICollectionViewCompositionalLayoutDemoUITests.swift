@@ -33,7 +33,7 @@ class UICollectionViewCompositionalLayoutDemoUITests: XCTestCase {
             
             XCTAssert(layoutCells.count > 0)
             
-            snapshot(app.navigationBars.firstMatch.title)
+            snapshot(app.navigationBars.firstMatch.identifier)
             
             app.navigationBars.buttons.element(boundBy: 0).tap()
         }
