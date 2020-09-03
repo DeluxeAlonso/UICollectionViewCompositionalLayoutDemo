@@ -9,10 +9,7 @@ Sample project to demonstrate how to create different layouts using UICollection
 
 Each layout style can be found [here](https://github.com/DeluxeAlonso/UICollectionViewCompositionalLayoutDemo/tree/development/UICollectionViewCompositionalLayoutDemo/CompositionalLayouts).
 
-<img src="Screenshots/StyleA.png" width=200 height=433> <img src="Screenshots/StyleB.png" width=200 height=433>
-<img src="Screenshots/StyleC.png" width=200 height=433> <img src="Screenshots/StyleD.png" width=200 height=433>
-<img src="Screenshots/StyleE.png" width=200 height=433> <img src="Screenshots/StyleF.png" width=200 height=433>
-<img src="Screenshots/StyleG.png" width=200 height=433>
+<img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style A.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style B.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style C.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style D.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style E.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style F.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style G.png" width=200 height=433>
 
 ## Contributing
 
