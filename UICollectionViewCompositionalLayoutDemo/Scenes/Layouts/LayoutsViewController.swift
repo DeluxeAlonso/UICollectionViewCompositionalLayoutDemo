@@ -51,9 +51,9 @@ final class LayoutsViewController: UITableViewController {
     }
     
     private func configureDataSource() {
-        dataSource = UITableViewDiffableDataSource<LayoutsSection, AnyLayoutCellViewModel>(tableView: tableView, cellProvider: { tableView, indexPath, item -> UITableViewCell? in
+        dataSource = UITableViewDiffableDataSource<LayoutsSection, AnyLayoutCellViewModel>(tableView: tableView, cellProvider: { tableView, indexPath, model -> UITableViewCell? in
             let cell = tableView.dequeueReusableCell(with: LayoutTableViewCell.self, for: indexPath)
-            cell.viewModel = item
+            cell.viewModel = model
             
             return cell
         })
