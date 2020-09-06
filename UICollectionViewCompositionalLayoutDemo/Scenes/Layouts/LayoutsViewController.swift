@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LayoutsViewController: UITableViewController {
+final class LayoutsViewController: UITableViewController {
     
     private let viewModel: LayoutsViewModelProtocol
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NumberedCollectionViewCell: UICollectionViewCell {
+final class NumberedCollectionViewCell: UICollectionViewCell {
     
     lazy var numberLabel: UILabel = {
         let label = UILabel()

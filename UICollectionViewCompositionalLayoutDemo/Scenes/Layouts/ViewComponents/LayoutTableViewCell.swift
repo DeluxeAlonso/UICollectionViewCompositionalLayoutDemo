@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LayoutTableViewCell: UITableViewCell {
+final class LayoutTableViewCell: UITableViewCell {
     
     var viewModel: LayoutCellViewModelProtocol? {
         didSet {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LayoutDetailViewController: UIViewController {
+final class LayoutDetailViewController: UIViewController {
     
     private let compositionalLayout: CompositionalLayoutProtocol
     private var layoutDetailView: LayoutDetailView!

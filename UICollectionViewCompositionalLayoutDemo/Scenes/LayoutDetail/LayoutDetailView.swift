@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LayoutDetailView: UIView {
+final class LayoutDetailView: UIView {
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewLayout()
