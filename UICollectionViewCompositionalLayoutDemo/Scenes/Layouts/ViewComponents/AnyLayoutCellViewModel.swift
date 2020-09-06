@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct AnyLayoutCellViewModel: Hashable, LayoutCellViewModelProtocol {
+
+    var title: String?
+    var subtitle: String?
+    
+    init(_ viewModel: LayoutCellViewModelProtocol) {
+        self.title = viewModel.title
+        self.subtitle = viewModel.subtitle
+    }
+    
+}

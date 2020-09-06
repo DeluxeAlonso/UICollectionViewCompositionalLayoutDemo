@@ -35,6 +35,7 @@
 		E2A4AABA24E9A69E00AF73E2 /* CompositionalLayoutD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB924E9A69E00AF73E2 /* CompositionalLayoutD.swift */; };
 		E2A4AABC24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AABB24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift */; };
 		E2B2471A25048B8200C7289C /* AnyLayoutCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2471925048B8200C7289C /* AnyLayoutCellViewModel.swift */; };
+		E2B2471C25049AC500C7289C /* LayoutsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2471B25049AC500C7289C /* LayoutsSection.swift */; };
 		E2DD7CF924EA2004001C5678 /* LayoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		E2A4AAB924E9A69E00AF73E2 /* CompositionalLayoutD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutD.swift; sourceTree = "<group>"; };
 		E2A4AABB24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberedCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2B2471925048B8200C7289C /* AnyLayoutCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLayoutCellViewModel.swift; sourceTree = "<group>"; };
+		E2B2471B25049AC500C7289C /* LayoutsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsSection.swift; sourceTree = "<group>"; };
 		E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,6 +235,7 @@
 				E26A1D7724FB5C1C00611FA3 /* ViewComponents */,
 				E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */,
 				E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */,
+				E2B2471B25049AC500C7289C /* LayoutsSection.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				E26A1D7624FB5B5B00611FA3 /* LayoutCellViewModel.swift in Sources */,
 				E25F6FB524E8924B00FCFF75 /* LayoutDetailView.swift in Sources */,
 				E230042124EB73D600A34346 /* CompositionalLayoutE.swift in Sources */,
+				E2B2471C25049AC500C7289C /* LayoutsSection.swift in Sources */,
 				E2A4AABA24E9A69E00AF73E2 /* CompositionalLayoutD.swift in Sources */,
 				E25F6FBC24E8E5CE00FCFF75 /* CompositionalLayoutA.swift in Sources */,
 				E28AF4F624EA222C000689D1 /* LayoutsViewModel.swift in Sources */,

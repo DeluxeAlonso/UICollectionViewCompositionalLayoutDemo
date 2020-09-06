@@ -12,6 +12,8 @@ class LayoutsViewController: UITableViewController {
     
     private let viewModel: LayoutsViewModelProtocol
     
+    private var dataSource: UITableViewDiffableDataSource<LayoutsSection, AnyLayoutCellViewModel>!
+    
     // MARK: - Initializers
     
     init(viewModel: LayoutsViewModelProtocol) {
@@ -43,23 +45,25 @@ class LayoutsViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         
         tableView.register(cellType: LayoutTableViewCell.self)
-    }
-
-    // MARK: - UITableViewControllerDataSource
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfLayouts
+        
+        configureDataSource()
+        updateUI()
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: LayoutTableViewCell.self, for: indexPath)
-        cell.viewModel = viewModel.makeLayoutCellViewModel(for: indexPath.row)
-        
-        return cell
+    private func configureDataSource() {
+        dataSource = UITableViewDiffableDataSource<LayoutsSection, AnyLayoutCellViewModel>(tableView: tableView, cellProvider: { tableView, indexPath, item -> UITableViewCell? in
+            let cell = tableView.dequeueReusableCell(with: LayoutTableViewCell.self, for: indexPath)
+            cell.viewModel = item
+            
+            return cell
+        })
+    }
+    
+    private func updateUI(animated: Bool = false) {
+        var currentSnapshot = NSDiffableDataSourceSnapshot<LayoutsSection, AnyLayoutCellViewModel>()
+        currentSnapshot.appendSections([.main])
+        currentSnapshot.appendItems(viewModel.makeLayoutCellViewModels(), toSection: .main)
+        dataSource.apply(currentSnapshot, animatingDifferences: animated)
     }
     
     // MARK: - UITableViewControllerDelegate
@@ -70,7 +74,7 @@ class LayoutsViewController: UITableViewController {
         let selectedLayout = viewModel.layout(at: indexPath.row)
         let detailViewController = LayoutDetailViewController(compositionalLayout: selectedLayout)
         
-        navigationController?.pushViewController(detailViewController, animated: true)
+        show(detailViewController, sender: nil)
     }
 
 }
