@@ -24,7 +24,8 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
                 CompositionalLayoutD(),
                 CompositionalLayoutE(),
                 CompositionalLayoutF(),
-                CompositionalLayoutG()]
+                CompositionalLayoutG(),
+                CompositionalLayoutH()]
     }()
     
     func layout(at index: Int) -> CompositionalLayoutProtocol {
