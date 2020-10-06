@@ -5,6 +5,10 @@
 
 Sample project to demonstrate how to create different layouts using UICollectionViewCompositionalLayout which was released on iOS 13.
 
+## Requirements
+
+iOS 13+
+
 ## Contents
 
 Each layout style can be found [here](https://github.com/DeluxeAlonso/UICollectionViewCompositionalLayoutDemo/tree/development/UICollectionViewCompositionalLayoutDemo/CompositionalLayouts).
