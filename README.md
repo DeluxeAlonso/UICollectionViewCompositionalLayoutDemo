@@ -1,13 +1,9 @@
 # UICollectionViewCompositionalLayoutDemo
 
-[![Platform](https://img.shields.io/badge/platform-iOS_13-yellow.svg)]()
+[![Platform](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
 [![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 Sample project to demonstrate how to create different layouts using UICollectionViewCompositionalLayout which was released on iOS 13.
-
-## Requirements
-
-iOS 13+
 
 ## Contents
 
