@@ -1,6 +1,6 @@
 # UICollectionViewCompositionalLayoutDemo
 
-[![Platform](https://img.shields.io/badge/platform-iOS_13-yellow.svg)]()
+[![Platform](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
 [![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 Sample project to demonstrate how to create different layouts using UICollectionViewCompositionalLayout which was released on iOS 13.
@@ -9,7 +9,7 @@ Sample project to demonstrate how to create different layouts using UICollection
 
 Each layout style can be found [here](https://github.com/DeluxeAlonso/UICollectionViewCompositionalLayoutDemo/tree/development/UICollectionViewCompositionalLayoutDemo/CompositionalLayouts).
 
-<img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style A.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style B.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style C.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style D.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style E.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style F.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style G.png" width=200 height=433>
+<img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style A.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style B.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style C.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style D.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style E.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style F.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style G.png" width=200 height=433> <img src="fastlane/screenshots/en-US/iPhone 11 Pro-Style H.png" width=200 height=433>
 
 ## Contributing
 
