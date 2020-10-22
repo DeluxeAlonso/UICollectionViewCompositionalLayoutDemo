@@ -10,7 +10,7 @@ import UIKit
 
 final class NumberedCollectionViewCell: UICollectionViewCell {
     
-    lazy var numberLabel: UILabel = {
+    private lazy var numberLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
