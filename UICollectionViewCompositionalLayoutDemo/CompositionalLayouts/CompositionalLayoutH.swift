@@ -15,7 +15,7 @@ struct CompositionalLayoutH: CompositionalLayoutProtocol {
     }
     
     var subtitle: String? {
-        return nil
+        return "Layout that contains a single leading item and a trailing nested group."
     }
     
     func create() -> UICollectionViewLayout {
