@@ -6,8 +6,6 @@
 //  Copyright © 2020 Alonso. All rights reserved.
 //
 
-import Foundation
-
 protocol LayoutCellViewModelProtocol {
     
     var title: String? { get }
