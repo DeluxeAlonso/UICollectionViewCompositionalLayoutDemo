@@ -10,7 +10,7 @@ import UIKit
 
 final class LayoutDetailView: UIView {
     
-    lazy private var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
