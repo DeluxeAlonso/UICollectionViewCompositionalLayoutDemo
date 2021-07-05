@@ -8,8 +8,8 @@
 
 struct AnyLayoutCellViewModel: Hashable, LayoutCellViewModelProtocol {
 
-    var title: String?
-    var subtitle: String?
+    let title: String?
+    let subtitle: String?
     
     init(_ viewModel: LayoutCellViewModelProtocol) {
         self.title = viewModel.title
