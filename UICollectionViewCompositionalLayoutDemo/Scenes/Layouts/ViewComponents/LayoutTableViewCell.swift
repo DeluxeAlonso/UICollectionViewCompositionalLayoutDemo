@@ -27,15 +27,7 @@ final class LayoutTableViewCell: UITableViewCell {
         super.init(coder: coder)
         setupUI()
     }
-    
-    // MARK: - Lifecycle
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        textLabel?.text = nil
-        detailTextLabel?.text = nil
-    }
-    
+
     // MARK: - Private
     
     private func setupUI() {
