@@ -52,7 +52,7 @@ final class LayoutDetailViewController: UIViewController {
         collectionView.register(viewType: SectionHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
         collectionView.register(viewType: SectionFooterView.self, kind: UICollectionView.elementKindSectionFooter)
         
-        collectionView.collectionViewLayout = layout()
+        collectionView.collectionViewLayout = layout.create()
     }
     
 }
