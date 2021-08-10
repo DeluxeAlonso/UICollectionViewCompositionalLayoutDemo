@@ -20,7 +20,7 @@ final class LayoutDetailView: UIView {
     }()
     
     // MARK: - Initializers
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -49,5 +49,5 @@ final class LayoutDetailView: UIView {
             collectionView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor)
         ])
     }
-
+    
 }
