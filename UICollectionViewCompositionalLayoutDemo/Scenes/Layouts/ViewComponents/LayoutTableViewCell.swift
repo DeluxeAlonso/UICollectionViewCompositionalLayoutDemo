@@ -27,7 +27,7 @@ final class LayoutTableViewCell: UITableViewCell {
         super.init(coder: coder)
         setupUI()
     }
-
+    
     // MARK: - Private
     
     private func setupUI() {
@@ -41,5 +41,5 @@ final class LayoutTableViewCell: UITableViewCell {
         textLabel?.text = viewModel?.title
         detailTextLabel?.text = viewModel?.subtitle
     }
-
+    
 }
