@@ -30,8 +30,4 @@ extension CompositionalLayoutProtocol {
         return 40
     }
 
-    func callAsFunction() -> UICollectionViewLayout {
-        return create()
-    }
-    
 }
