@@ -25,7 +25,7 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
                 CompositionalLayoutG(),
                 CompositionalLayoutH()]
     }()
-
+    
     // MARK: - LayoutsViewModelProtocol
     
     func layout(at index: Int) -> CompositionalLayoutProtocol {
@@ -36,5 +36,5 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
         let cellViewModels = layouts.map { LayoutCellViewModel($0) }
         return cellViewModels.map { AnyLayoutCellViewModel($0) }
     }
-
+    
 }
