@@ -14,7 +14,7 @@ final class LayoutDetailViewController: UIViewController {
     private var layoutDetailView: LayoutDetailView!
     
     // MARK: - Initializers
-
+    
     init(compositionalLayout: CompositionalLayoutProtocol) {
         self.compositionalLayout = compositionalLayout
         super.init(nibName: nil, bundle: nil)
@@ -30,7 +30,7 @@ final class LayoutDetailViewController: UIViewController {
         layoutDetailView = LayoutDetailView()
         view = layoutDetailView
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI(with: compositionalLayout)
