@@ -7,7 +7,7 @@
 //
 
 struct AnyLayoutCellViewModel: Hashable, LayoutCellViewModelProtocol {
-
+    
     let title: String?
     let subtitle: String?
     
