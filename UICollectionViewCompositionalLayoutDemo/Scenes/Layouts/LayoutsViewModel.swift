@@ -25,6 +25,8 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
                 CompositionalLayoutG(),
                 CompositionalLayoutH()]
     }()
+
+    // MARK: - LayoutsViewModelProtocol
     
     func layout(at index: Int) -> CompositionalLayoutProtocol {
         return layouts[index]
