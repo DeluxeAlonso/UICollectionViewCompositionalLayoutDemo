@@ -29,5 +29,9 @@ extension CompositionalLayoutProtocol {
     var numberOfRowsPerSection: Int {
         return 40
     }
+
+    func callAsFunction() -> UICollectionViewLayout {
+        return create()
+    }
     
 }
