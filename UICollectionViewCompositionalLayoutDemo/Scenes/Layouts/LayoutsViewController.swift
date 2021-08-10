@@ -26,7 +26,7 @@ final class LayoutsViewController: UITableViewController {
     }
     
     // MARK: - Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -76,5 +76,5 @@ final class LayoutsViewController: UITableViewController {
         
         show(detailViewController, sender: nil)
     }
-
+    
 }
