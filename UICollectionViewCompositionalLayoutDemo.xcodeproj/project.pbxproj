@@ -37,6 +37,7 @@
 		E2A4AABC24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AABB24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift */; };
 		E2B2471A25048B8200C7289C /* AnyLayoutCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2471925048B8200C7289C /* AnyLayoutCellViewModel.swift */; };
 		E2B2471C25049AC500C7289C /* LayoutsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2471B25049AC500C7289C /* LayoutsSection.swift */; };
+		E2B92F2526CF80E600AC882C /* CompositionalLayoutI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B92F2426CF80E600AC882C /* CompositionalLayoutI.swift */; };
 		E2DD7CF924EA2004001C5678 /* LayoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		E2A4AABB24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberedCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2B2471925048B8200C7289C /* AnyLayoutCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLayoutCellViewModel.swift; sourceTree = "<group>"; };
 		E2B2471B25049AC500C7289C /* LayoutsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsSection.swift; sourceTree = "<group>"; };
+		E2B92F2426CF80E600AC882C /* CompositionalLayoutI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutI.swift; sourceTree = "<group>"; };
 		E2DD7CF824EA2004001C5678 /* LayoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,7 @@
 				E248DBFA24ECCE1B0067D5DB /* CompositionalLayoutF.swift */,
 				E209BD2424F4B9F40038A5EB /* CompositionalLayoutG.swift */,
 				E22FBB2625297B5200E52A2B /* CompositionalLayoutH.swift */,
+				E2B92F2426CF80E600AC882C /* CompositionalLayoutI.swift */,
 			);
 			path = CompositionalLayouts;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				E26A1D7024FB3F8000611FA3 /* UICollectionView+Dequeuing.swift in Sources */,
 				E248DBFB24ECCE1B0067D5DB /* CompositionalLayoutF.swift in Sources */,
 				E2B2471A25048B8200C7289C /* AnyLayoutCellViewModel.swift in Sources */,
+				E2B92F2526CF80E600AC882C /* CompositionalLayoutI.swift in Sources */,
 				E25F6F9124E88B7F00FCFF75 /* SceneDelegate.swift in Sources */,
 				E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */,
 			);
