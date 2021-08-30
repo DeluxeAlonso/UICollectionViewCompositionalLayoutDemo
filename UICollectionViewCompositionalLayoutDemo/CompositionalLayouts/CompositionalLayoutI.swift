@@ -6,4 +6,20 @@
 //  Copyright © 2021 Alonso. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct CompositionalLayoutI: CompositionalLayoutProtocol {
+
+    var title: String? {
+        return "Style I"
+    }
+
+    var subtitle: String? {
+        return nil
+    }
+
+    func create() -> UICollectionViewLayout {
+        fatalError()
+    }
+
+}
