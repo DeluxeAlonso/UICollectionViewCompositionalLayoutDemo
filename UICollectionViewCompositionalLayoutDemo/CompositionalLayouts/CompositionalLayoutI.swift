@@ -18,6 +18,14 @@ struct CompositionalLayoutI: CompositionalLayoutProtocol {
         return nil
     }
 
+    var numberOfSections: Int {
+        return 10
+    }
+
+    var numberOfRowsPerSection: Int {
+        return 40
+    }
+
     func create() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
             let leadingItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .fractionalHeight(1.0)))
