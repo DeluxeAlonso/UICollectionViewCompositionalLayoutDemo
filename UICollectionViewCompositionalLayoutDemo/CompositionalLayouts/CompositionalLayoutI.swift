@@ -15,7 +15,7 @@ struct CompositionalLayoutI: CompositionalLayoutProtocol {
     }
 
     var subtitle: String? {
-        return nil
+        return "Layout that contains a single leading item and a trailing nested group with a continuous orthogonal scrolling behavior."
     }
 
     var numberOfSections: Int {
