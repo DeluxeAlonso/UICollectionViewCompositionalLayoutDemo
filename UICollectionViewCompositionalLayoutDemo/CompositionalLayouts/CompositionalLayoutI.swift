@@ -10,7 +10,7 @@ import UIKit
 
 struct CompositionalLayoutI: CompositionalLayoutProtocol {
 
-    var title: String? {
+    var title: String {
         return "Style I"
     }
 
