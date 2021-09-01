@@ -10,7 +10,7 @@ import UIKit
 
 protocol CompositionalLayoutProtocol {
     
-    var title: String? { get }
+    var title: String { get }
     var subtitle: String? { get }
     
     var numberOfSections: Int { get }
