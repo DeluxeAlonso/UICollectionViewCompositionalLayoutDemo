@@ -10,4 +10,6 @@ import Foundation
 
 protocol LayoutsViewFactoryProtocol {
     
+    var layouts: [CompositionalLayoutProtocol] { get }
+
 }
