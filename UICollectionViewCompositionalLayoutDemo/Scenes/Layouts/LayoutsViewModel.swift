@@ -26,15 +26,21 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
                 CompositionalLayoutH(),
                 CompositionalLayoutI()]
     }()
+
+    private let factory: LayoutsViewFactoryProtocol
+
+    init(factory: LayoutsViewFactoryProtocol) {
+        self.factory = factory
+    }
     
     // MARK: - LayoutsViewModelProtocol
     
     func layout(at index: Int) -> CompositionalLayoutProtocol {
-        return layouts[index]
+        return factory.layouts[index]
     }
     
     func makeLayoutCellViewModels() -> [AnyLayoutCellViewModel] {
-        let cellViewModels = layouts.map { LayoutCellViewModel($0) }
+        let cellViewModels = factory.layouts.map { LayoutCellViewModel($0) }
         return cellViewModels.map { AnyLayoutCellViewModel($0) }
     }
     
