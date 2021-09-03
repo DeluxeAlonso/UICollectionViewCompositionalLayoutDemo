@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
 
-        let viewModel = LayoutsViewModel(factory: LayoutsViewFactory())
+        let viewModel = LayoutsViewModel(factory: LayoutsFactory())
         let layoutsViewController = LayoutsViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: layoutsViewController)
         

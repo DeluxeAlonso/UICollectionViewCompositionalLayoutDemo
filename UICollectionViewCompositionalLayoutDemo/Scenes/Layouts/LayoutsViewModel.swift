@@ -29,6 +29,8 @@ final class LayoutsViewModel: LayoutsViewModelProtocol {
 
     private let factory: LayoutsViewFactoryProtocol
 
+    // MARK: - Initializers
+
     init(factory: LayoutsViewFactoryProtocol) {
         self.factory = factory
     }

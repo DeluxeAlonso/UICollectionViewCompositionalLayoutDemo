@@ -1,5 +1,5 @@
 //
-//  LayoutsViewFactory.swift
+//  LayoutsFactory.swift
 //  UICollectionViewCompositionalLayoutDemo
 //
 //  Created by Alonso on 1/09/21.
@@ -14,7 +14,7 @@ protocol LayoutsViewFactoryProtocol {
 
 }
 
-struct LayoutsViewFactory: LayoutsViewFactoryProtocol {
+struct LayoutsFactory: LayoutsViewFactoryProtocol {
 
     var layouts: [CompositionalLayoutProtocol] {
         return [CompositionalLayoutA(),
