@@ -31,6 +31,7 @@
 		E26A1D7424FB58F700611FA3 /* UITableView+Dequeuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A1D7324FB58F700611FA3 /* UITableView+Dequeuing.swift */; };
 		E26A1D7624FB5B5B00611FA3 /* LayoutCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A1D7524FB5B5B00611FA3 /* LayoutCellViewModel.swift */; };
 		E2726FC826E0912E00F5624E /* LayoutsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726FC726E0912E00F5624E /* LayoutsFactory.swift */; };
+		E277824A26E1DFE500BCBFAE /* LayoutsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277824926E1DFE500BCBFAE /* LayoutsProtocols.swift */; };
 		E28AF4F624EA222C000689D1 /* LayoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */; };
 		E28AF4FC24EA2E98000689D1 /* LayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */; };
 		E2A4AAB124E9763100AF73E2 /* CompositionalLayoutC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */; };
@@ -81,6 +82,7 @@
 		E26A1D7324FB58F700611FA3 /* UITableView+Dequeuing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeuing.swift"; sourceTree = "<group>"; };
 		E26A1D7524FB5B5B00611FA3 /* LayoutCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCellViewModel.swift; sourceTree = "<group>"; };
 		E2726FC726E0912E00F5624E /* LayoutsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsFactory.swift; sourceTree = "<group>"; };
+		E277824926E1DFE500BCBFAE /* LayoutsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsProtocols.swift; sourceTree = "<group>"; };
 		E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsViewModel.swift; sourceTree = "<group>"; };
 		E28AF4FB24EA2E97000689D1 /* LayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTableViewCell.swift; sourceTree = "<group>"; };
 		E2A4AAB024E9763100AF73E2 /* CompositionalLayoutC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutC.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				E28AF4F524EA222C000689D1 /* LayoutsViewModel.swift */,
 				E2B2471B25049AC500C7289C /* LayoutsSection.swift */,
 				E2726FC726E0912E00F5624E /* LayoutsFactory.swift */,
+				E277824926E1DFE500BCBFAE /* LayoutsProtocols.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				E25F6FBE24E8E5DC00FCFF75 /* CompositionalLayoutB.swift in Sources */,
 				E26A1D7424FB58F700611FA3 /* UITableView+Dequeuing.swift in Sources */,
 				E26A1D7224FB587600611FA3 /* Dequeuable.swift in Sources */,
+				E277824A26E1DFE500BCBFAE /* LayoutsProtocols.swift in Sources */,
 				E2DD7CF924EA2004001C5678 /* LayoutsViewController.swift in Sources */,
 				E2A4AABC24E9ACDD00AF73E2 /* NumberedCollectionViewCell.swift in Sources */,
 				E25F6FB324E88E3D00FCFF75 /* LayoutDetailViewController.swift in Sources */,

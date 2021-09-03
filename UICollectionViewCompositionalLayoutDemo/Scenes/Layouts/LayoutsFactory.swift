@@ -8,12 +8,6 @@
 
 import Foundation
 
-protocol LayoutsViewFactoryProtocol {
-    
-    var layouts: [CompositionalLayoutProtocol] { get }
-
-}
-
 struct LayoutsFactory: LayoutsViewFactoryProtocol {
 
     var layouts: [CompositionalLayoutProtocol] {

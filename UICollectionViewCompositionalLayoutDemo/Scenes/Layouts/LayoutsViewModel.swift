@@ -6,13 +6,6 @@
 //  Copyright © 2020 Alonso. All rights reserved.
 //
 
-protocol LayoutsViewModelProtocol {
-    
-    func layout(at index: Int) -> CompositionalLayoutProtocol
-    func makeLayoutCellViewModels() -> [AnyLayoutCellViewModel]
-    
-}
-
 final class LayoutsViewModel: LayoutsViewModelProtocol {
     
     private lazy var layouts: [CompositionalLayoutProtocol] = {
