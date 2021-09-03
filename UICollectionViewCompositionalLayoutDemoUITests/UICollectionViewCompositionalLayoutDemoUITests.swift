@@ -35,7 +35,7 @@ class UICollectionViewCompositionalLayoutDemoUITests: XCTestCase {
 
             let collectionView = app.collectionViews.firstMatch
             let startPoint = collectionView.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
-            let endPoint = collectionView.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 1.0))
+            let endPoint = collectionView.coordinate(withNormalizedOffset: CGVector(dx: 0.0, dy: 0.5))
             startPoint.press(forDuration:1.0, thenDragTo:endPoint);
             
             snapshot(app.navigationBars.firstMatch.identifier)
