@@ -6,8 +6,6 @@
 //  Copyright © 2021 Alonso. All rights reserved.
 //
 
-import Foundation
-
 protocol LayoutsViewModelProtocol {
 
     func layout(at index: Int) -> CompositionalLayoutProtocol
